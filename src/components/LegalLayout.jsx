@@ -13,14 +13,6 @@ export default function LegalLayout({ title, effectiveDate, sections = [], child
         <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">{title}</h1>
         <p className="text-xs text-[var(--mist-dim)] mb-10">Effective {effectiveDate}</p>
 
-        <div className="rounded-lg border border-amber-500/25 bg-amber-500/5 px-4 py-3 mb-10 max-w-2xl">
-          <p className="text-xs text-amber-300/90 leading-relaxed">
-            This is a starting template, not legal advice — fill in the bracketed
-            placeholders with your actual details, and consider having it
-            reviewed before relying on it for a public server.
-          </p>
-        </div>
-
         <div className="grid lg:grid-cols-[200px_1fr] gap-12">
           {sections.length > 0 && (
             <nav className="hidden lg:block">
