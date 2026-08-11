@@ -26,6 +26,7 @@ export default function LegalLayout({ title, path, description, effectiveDate, i
           </div>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">{title}</h1>
           <p className="text-xs text-[var(--mist-dim)] mb-10">Effective {effectiveDate}</p>
+        </Reveal>
 
         <div className="grid lg:grid-cols-[200px_1fr] gap-12">
           {sections.length > 0 && (
