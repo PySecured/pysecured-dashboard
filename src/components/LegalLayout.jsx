@@ -27,16 +27,6 @@ export default function LegalLayout({ title, path, description, effectiveDate, i
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">{title}</h1>
           <p className="text-xs text-[var(--mist-dim)] mb-10">Effective {effectiveDate}</p>
 
-          <div className="flex items-start gap-2.5 rounded-lg border border-amber-500/25 bg-amber-500/5 px-4 py-3 mb-10 max-w-2xl">
-            <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" strokeWidth={2} />
-            <p className="text-xs text-amber-300/90 leading-relaxed">
-              This is a starting template, not legal advice — fill in the bracketed
-              placeholders with your actual details, and consider having it
-              reviewed before relying on it for a public server.
-            </p>
-          </div>
-        </Reveal>
-
         <div className="grid lg:grid-cols-[200px_1fr] gap-12">
           {sections.length > 0 && (
             <nav className="hidden lg:block">
